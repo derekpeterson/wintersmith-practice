@@ -1,0 +1,13 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Wompity womp womp",
+    "owner": "drk",
+    "description": "I dunno just playin'"
+  },
+  "plugins": [
+    "wintersmith-browserify",
+    "wintersmith-less",
+    "wintersmith-nunjucks"
+  ]
+}

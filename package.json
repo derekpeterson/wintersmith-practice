@@ -1,0 +1,16 @@
+{
+  "name": "wintersmith-practice",
+  "description": "Just playing around and putting together a basic structure that could support separated style guide/pattern library examples.",
+  "version": "0.0.0",
+  "devDependencies": {},
+  "author": "Derek Peterson",
+  "dependencies": {
+    "wintersmith-nunjucks": "~0.5.0",
+    "wintersmith-less": "~0.2.2",
+    "wintersmith-browserify": "~0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/derekpeterson/wintersmith-practice.git"
+  }
+}

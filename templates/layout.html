@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      {% block title %}
+        {{ name }}
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/css/main.css">
+    {% endblock %}
+  </head>
+  <body>
+    <header>
+      <div class="content-wrap">
+      {% block header %}
+        <div class="logo">
+          <h1><a href="{{ url }}">{{ name }}</a></h1>
+        </div>
+      {% endblock %}
+      </div>
+    </header>
+    <div id="content">
+      <div class="content-wrap">
+      {% block content %}
+        <p>This is where your content goes!</p>
+      {% endblock %}
+      </div>
+    </div>
+    <footer>
+      <div class="content-wrap">
+      {% block footer %}
+        <section class="copy">
+          <p>&copy; 2014 {{ owner }} &mdash; powered by <a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p>
+        </section>
+      {% endblock %}
+      </div>
+    </footer>
+  </body>
+</html>

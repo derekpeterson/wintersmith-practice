@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="intro">
+    {% set index = contents['index.md'] %}
+    <h1>{{ index.title }}</h1>
+    <p>{{ index.html }}</p>
+  </div>
+
+  {% for example in contents.examples._.pages %}
+    {% include 'partials/example.html' %}
+  {% endfor %}
+
+{% endblock %}
